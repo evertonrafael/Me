@@ -41,9 +41,10 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System" />
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -77,22 +78,29 @@
     </Reference>
     <Reference Include="System.Web.Mvc">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.1.2\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\Login.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\plugins\bootstrap\bootstrap-theme.css" />
     <Content Include="Content\plugins\bootstrap\bootstrap-theme.min.css" />
     <Content Include="Content\plugins\bootstrap\bootstrap.css" />
     <Content Include="Content\plugins\bootstrap\bootstrap.min.css" />
+    <Content Include="Content\css\Style.css" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.11.2.min.js" />
     <Content Include="Scripts\plugins\bootstrap\bootstrap.js" />
     <Content Include="Scripts\plugins\bootstrap\bootstrap.min.js" />
     <Content Include="Scripts\plugins\bootstrap\npm.js" />
+    <Content Include="Scripts\plugins\ie10-viewport-bug-workaround.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -108,6 +116,9 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Content\plugins\bootstrap\bootstrap-theme.css.map" />
     <Content Include="Content\plugins\bootstrap\bootstrap.css.map" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\_MenuSideBar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -117,8 +128,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
