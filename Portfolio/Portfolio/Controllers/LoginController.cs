@@ -1,4 +1,5 @@
-﻿using Repository.Class;
+﻿using Model;
+using Repository.Class;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,19 +17,20 @@ namespace Portfolio.Controllers
         {
             return View();
         }
-
-        public ActionResult Login(string email, string senha)
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login(Usuario usu)
         {
-            var usuarioLogado = UOW.UsuarioRepository.Get(f => f.Email == email && f.Senha == senha);
+            var usuarioLogado = UOW.UsuarioRepository.Get(f => f.Email == usu.Email && f.Senha == usu.Senha);           
             if (usuarioLogado != null && usuarioLogado.Count() > 0)
             {
                 Session["usuario"] = usuarioLogado;
                 return RedirectToAction("../Admin");
             }
-            else
-            {
-                return RedirectToAction("Index");
-            }
+
+            ModelState.AddModelError("usuarioousenhaeinvalidos", "Usuário ou senha inválidos.");
+            return View("Index");
         }
     }
 }
