@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Util.Criptografia;
 
 namespace Portfolio.Controllers
 {
@@ -21,8 +22,9 @@ namespace Portfolio.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Login(Usuario usu)
-        {
-            var usuarioLogado = UOW.UsuarioRepository.Get(f => f.Email == usu.Email && f.Senha == usu.Senha);           
+        {         
+            var md5Pass = MD5Cryptography.Encrypt(usu.Senha, true);
+            var usuarioLogado = UOW.UsuarioRepository.Get(f => f.Email == usu.Email && f.Senha == md5Pass);           
             if (usuarioLogado != null && usuarioLogado.Count() > 0)
             {
                 Session["usuario"] = usuarioLogado;
