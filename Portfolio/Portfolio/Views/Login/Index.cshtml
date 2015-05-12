@@ -8,18 +8,32 @@
     <form class="form-signin" action="@Url.Action("Login", "Login")" method="post">
         @Html.AntiForgeryToken()
 
-        @*<h2 class="form-signin-heading">Please sign in</h2>*@
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="text" id="inputUser" class="form-control" placeholder="Login" name="email" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="senha" required>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="inputUser" type="email" class="validate" name="email" autofocus>
+                        <label for="inputUser">Login</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="inputPassword" type="password" class="validate" name="senha">
+                        <label for="inputPassword">Senha</label>
+                    </div>
+                </div>
+                <p>
+                    <input type="checkbox" id="remember-me" value="remember-me" />
+                    <label for="remember-me">Lembrar</label>
+                </p>
+            </div>
+            <div class="card-action">
+                <button class="btn btn-lg btn-block waves-effect waves-light" type="submit">Entrar</button>
+                @Html.ValidationMessage("usuarioousenhaeinvalidos")
+            </div>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        @Html.ValidationMessage("usuarioousenhaeinvalidos")
+
     </form>    
 </div>
 
