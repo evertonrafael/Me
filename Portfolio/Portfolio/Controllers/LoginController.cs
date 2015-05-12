@@ -24,7 +24,8 @@ namespace Portfolio.Controllers
         public ActionResult Login(Usuario usu)
         {         
             var md5Pass = MD5Cryptography.Encrypt(usu.Senha, true);
-            var usuarioLogado = UOW.UsuarioRepository.Get(f => f.Email == usu.Email && f.Senha == md5Pass);           
+            var usuarioLogado = UOW.UsuarioRepository.Get(f => f.Email == usu.Email && f.Senha == md5Pass);
+            
             if (usuarioLogado != null && usuarioLogado.Count() > 0)
             {
                 Session["usuario"] = usuarioLogado;
@@ -34,5 +35,7 @@ namespace Portfolio.Controllers
             ModelState.AddModelError("usuarioousenhaeinvalidos", "Usuário ou senha inválidos.");
             return View("Index");
         }
+
+
     }
 }
