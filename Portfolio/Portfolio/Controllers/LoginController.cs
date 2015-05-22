@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Util.Autenticacao;
 using Util.Criptografia;
 
 namespace Portfolio.Controllers
@@ -34,6 +35,17 @@ namespace Portfolio.Controllers
 
             ModelState.AddModelError("usuarioousenhaeinvalidos", "Usuário ou senha inválidos.");
             return View("Index");
+        }
+
+        [HttpPost]
+        [Autenticacao]
+        public ActionResult LogOut()
+        {   
+            Session.Clear();
+            Session.Abandon();
+            Session.RemoveAll();
+
+            return RedirectToAction("Index","Login");
         }
 
 

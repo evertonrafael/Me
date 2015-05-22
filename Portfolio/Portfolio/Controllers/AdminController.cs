@@ -8,6 +8,7 @@ using Util.Autenticacao;
 namespace Portfolio.Controllers
 {
     [Autenticacao]
+    [NoCacheAttribute]
     public class AdminController : Controller
     {
         // GET: Admin
