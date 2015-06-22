@@ -1,6 +1,6 @@
 ﻿html {
     font-family: GillSans, Calibri, Trebuchet, sans-serif;
-  }
+}
 
 body {
     display: flex;
@@ -45,4 +45,11 @@ main {
 
 .nav-admin {
     padding: 0 0 0 10px;
+}
+
+
+@media only screen and (min-width : 601px) {
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        line-height: 60px;
+    }
 }

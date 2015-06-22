@@ -24,5 +24,15 @@
     <script src="~/Scripts/materialize.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="~/Scripts/plugins/ie10-viewport-bug-workaround.js"></script>
+
+    <script type="text/javascript">
+
+        $('.button-collapse').sideNav({
+            menuWidth: 300, // Default is 240
+            edge: 'right', // Choose the horizontal origin
+            closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        }
+        );
+    </script>
 </body>
 </html>

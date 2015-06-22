@@ -1,15 +1,44 @@
-﻿<header>
+﻿@*<header>
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="#!" class="waves-effect">Portfolio</a></li>
         <li class="divider"></li>
         <li><a href="#!" class="waves-effect">Sair</a></li>
     </ul>
     <nav class="nav-admin blue-grey">
-        <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Logo</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a class="dropdown-button waves-effect" href="#!" data-activates="dropdown1"><i class="mdi-navigation-more-vert"></i></a></li>
-            </ul>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Logo</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="dropdown-button waves-effect" href="#!" data-activates="dropdown1"><i class="mdi-navigation-more-vert"></i></a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-</header>
+</header>*@
+
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <div class="col s12">
+                <a href="/" class="brand-logo"><img src="/images/logo.svg" alt=""></a>
+                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <div class="right-nav hide-on-med-and-down">
+                    <a href="https://editor.stamplay.com/register?utm_source=stamplay&utm_content=navbar_signup&utm_medium=website" class="waves-effect waves-stamplay btn-flat" id="signup-navbar">sign up</a>
+                    <a href="https://editor.stamplay.com/login?utm_source=stamplay&utm_content=navbar_login&utm_medium=website" class="waves-effect waves-light btn">login</a>
+                </div>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/docs/main">Docs</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-nav">
+                    <li><a href="/docs/main">Docs</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/about">About</a></li>
+                    <a href="https://editor.stamplay.com/register?utm_source=stamplay&utm_content=navbar_signup&utm_medium=website" class="waves-effect waves-stamplay btn-flat" id="signup-mobile-navbar">sign up</a>
+                    <a href="https://editor.stamplay.com/login?utm_source=stamplay&utm_content=navbar_login&utm_medium=website" class="waves-effect waves-light btn white-text">login</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
