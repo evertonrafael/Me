@@ -1,36 +1,30 @@
 ﻿<header>
     <form class="form-signin" action="@Url.Action("LogOut", "Login")" method="post">
-        <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#!" class="waves-effect">Portfolio</a></li>
-            <li class="divider"></li>
-            <li><button type="submit" class="waves-effect">Sair</button></li>
-        </ul>
-
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper">
-                    <div class="col s12">
-                        <a href="/" class="brand-logo"><img src="/images/logo.svg" alt=""></a>
-                        <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-                        <div class="right-nav hide-on-med-and-down">
-                            <a href="https://editor.stamplay.com/register?utm_source=stamplay&utm_content=navbar_signup&utm_medium=website" class="waves-effect waves-stamplay btn-flat" id="signup-navbar">sign up</a>
-                            <a href="https://editor.stamplay.com/login?utm_source=stamplay&utm_content=navbar_login&utm_medium=website" class="waves-effect waves-light btn">login</a>
+        <ul id="nav-mobile" class="side-nav fixed" style="width: 240px;">
+            <li class="logo">
+                <a id="logo-container" href="http://evertonrafael.com" class="brand-logo">
+                    <img src="http://evertonrafael.com/images/everton-rafael-logo.png" />
+                </a>
+            </li>
+            <li class="bold"><a href="#" class="waves-effect waves-teal">Sobre</a></li>
+            <li class="no-padding" id="MenuAdmin">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold">
+                        <a class="collapsible-header  waves-effect waves-teal">Admin</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="~/Admin/Index" class="waves-effect waves-teal">Home</a></li>
+                                <li><a href="~/Admin/CriacaoPost" class="waves-effect waves-teal">Criar Post</a></li>
+                            </ul>
                         </div>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="/docs/main">Docs</a></li>
-                            <li><a href="/pricing">Pricing</a></li>
-                            <li><a href="/about">About</a></li>
-                        </ul>
-                        <ul class="side-nav" id="mobile-nav">
-                            <li><a href="/docs/main">Docs</a></li>
-                            <li><a href="/pricing">Pricing</a></li>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="https://editor.stamplay.com/register?utm_source=stamplay&utm_content=navbar_signup&utm_medium=website" class="waves-effect waves-stamplay btn-flat" id="signup-mobile-navbar">sign up</a></li>
-                            <li><a href="https://editor.stamplay.com/login?utm_source=stamplay&utm_content=navbar_login&utm_medium=website" class="waves-effect waves-light btn white-text">login</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-opcoes">
+                <button type="submit" class="btn waves-effect">Sair</button>
+            </li>
+        </ul>
     </form>
 </header>
+
+<a href="#" data-activates="nav-mobile" class="btn btn-floating button-collapse btn-mobile"><i class="mdi-navigation-menu"></i></a>

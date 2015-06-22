@@ -17,6 +17,29 @@ main {
     border-bottom: 1px solid #eee;
 }
 
+header, main, footer {
+    padding-left: 240px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+    
+}
+@media (min-width : 992px) {
+    .btn-mobile {
+        display:none;
+    }
+}
+
+.btn-mobile{
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    margin:0;
+}
+
 /*nav a:hover, nav a:active, nav a:focus{
     color:#eceff1;
 }*/
@@ -52,4 +75,47 @@ main {
     nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
         line-height: 60px;
     }
+
+}
+
+.side-nav li {
+    padding: 0;
+}
+
+.side-nav a {
+    height: auto;
+    padding: 0;
+}
+
+.side-nav.fixed a {
+    padding: 0 15px;
+    margin: 0;
+}
+
+.side-nav a.brand-logo {
+    line-height: 0;
+}
+
+.brand-logo img {
+    padding: 20px 0;
+}
+
+.side-nav .collapsible-header {
+    line-height: 64px;
+}
+
+    .side-nav .collapsible-header + .collapsible-body ul li a {
+        line-height: 40px;
+    }
+
+.side-nav .nav-opcoes button{
+    margin: 0 1rem 0 1rem;
+}
+
+.nav-opcoes{
+    position:absolute;
+    bottom:70px;
+}
+.nav-opcoes:hover{
+    background:none !important;
 }

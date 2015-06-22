@@ -21,5 +21,10 @@ namespace Portfolio.Controllers
         {
             return PartialView("_MenuSideBar");
         }
+
+        public ActionResult CriacaoPost()
+        {
+            return View();
+        }
     }
 }

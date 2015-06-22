@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "CriacaoPost";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Action("MenuSideBar", "Admin")
+
+<div class="container-fluid">
+    <main>
+        <div class="row">
+            <div class="col s12">
+                <div class="section">
+                    <h5>Criação de Post</h5>
+                    @*<p>Novo post</p>*@
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Nome do Post</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Selecione a categoria</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea" length="500"></textarea>
+                        <label for="textarea1">Descrição</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="file-field input-field">
+                    <input class="file-path validate" type="text" />
+                    <div class="btn">
+                        <span>File</span>
+                        <input type="file" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+
