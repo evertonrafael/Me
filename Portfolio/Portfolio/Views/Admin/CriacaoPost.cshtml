@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col s12">
                 <div class="section">
-                    <h5>Criação de Post</h5>
+                    <h4>Criação de Post</h4>
                     @*<p>Novo post</p>*@
                 </div>
                 <div class="divider"></div>
@@ -25,13 +25,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s12">
+                    <div class="input-field col s6">
                         <select>
                             <option value="" disabled selected>Selecione a categoria</option>
                             <option value="1">Option 1</option>
                             <option value="2">Option 2</option>
                             <option value="3">Option 3</option>
                         </select>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="date" id="Data" class="datepicker">
+                        <label for="Data">Data da publicação</label>
                     </div>
                 </div>
                 <div class="row">
@@ -42,11 +46,18 @@
                 </div>
             </div>
             <div class="col s6">
-                <div class="file-field input-field">
-                    <input class="file-path validate" type="text" />
-                    <div class="btn">
-                        <span>File</span>
-                        <input type="file" />
+                <div class="row">
+                    <div class="col s12">
+                        <form action="~/images/uploads/"
+                              class="dropzone"
+                              id="myAwesomeDropzone"></form>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12">
+                <div class="row">
+                    <div class="col s12">
+                        <button type="submit" class="waves-effect waves-light btn-large right"><i class="material-icons left"></i>Salvar</button>
                     </div>
                 </div>
             </div>
@@ -54,4 +65,34 @@
     </main>
 </div>
 
+<link href="~/Scripts/plugins/dropzone-master/dist/basic.css" rel="stylesheet" />
+<link href="~/Scripts/plugins/dropzone-master/dist/dropzone.css" rel="stylesheet" />
+<script src="~/Scripts/plugins/dropzone-master/dist/dropzone.js"></script>
 
+<style type="text/css">
+    .dropzone {
+        border: 4px dashed #eee;
+        border-radius: 5px;
+        background: white;
+    }
+
+        .dropzone .dz-message {
+            font-weight: 400;
+            font-size: 2em;
+            color:#999;
+        }
+
+            .dropzone .dz-message .note {
+                font-size: 0.8em;
+                font-weight: 200;
+                display: block;
+                margin-top: 1.4rem;
+            }
+</style>
+
+<script type="text/javascript">
+    Dropzone.options.myAwesomeDropzone = {
+        paramName: "file",
+        dictDefaultMessage: 'Upload das imagens',
+    };
+</script>
