@@ -99,6 +99,7 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\fonts\material-design-icons\LICENSE.txt" />
     <Content Include="Content\fonts\material-design-icons\Material-Design-Icons.svg" />
+    <Content Include="Content\images\everton-rafael.png" />
     <Content Include="Content\plugins\bootstrap\bootstrap-theme.css" />
     <Content Include="Content\plugins\bootstrap\bootstrap-theme.min.css" />
     <Content Include="Content\plugins\bootstrap\bootstrap.css" />
@@ -130,6 +131,18 @@
     <Content Include="Scripts\plugins\bootstrap\bootstrap.js" />
     <Content Include="Scripts\plugins\bootstrap\bootstrap.min.js" />
     <Content Include="Scripts\plugins\bootstrap\npm.js" />
+    <Content Include="Scripts\plugins\dropzone-master\.gitignore" />
+    <Content Include="Scripts\plugins\dropzone-master\dist\basic.css" />
+    <Content Include="Scripts\plugins\dropzone-master\dist\dropzone-amd-module.js" />
+    <Content Include="Scripts\plugins\dropzone-master\dist\dropzone.css" />
+    <Content Include="Scripts\plugins\dropzone-master\dist\dropzone.js" />
+    <Content Include="Scripts\plugins\dropzone-master\dist\min\basic.min.css" />
+    <Content Include="Scripts\plugins\dropzone-master\dist\min\dropzone-amd-module.min.js" />
+    <Content Include="Scripts\plugins\dropzone-master\dist\min\dropzone.min.css" />
+    <Content Include="Scripts\plugins\dropzone-master\dist\min\dropzone.min.js" />
+    <Content Include="Scripts\plugins\dropzone-master\index.js" />
+    <Content Include="Scripts\plugins\dropzone-master\test\test.html" />
+    <Content Include="Scripts\plugins\dropzone-master\test\test.js" />
     <Content Include="Scripts\plugins\ie10-viewport-bug-workaround.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -157,6 +170,24 @@
     <Content Include="Views\Admin\_MenuSideBar.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Admin\CriacaoPost.cshtml" />
+    <Content Include="Scripts\plugins\dropzone-master\.tagconfig" />
+    <Content Include="Scripts\plugins\dropzone-master\.travis.yml" />
+    <Content Include="Scripts\plugins\dropzone-master\AMD_footer" />
+    <Content Include="Scripts\plugins\dropzone-master\AMD_header" />
+    <Content Include="Scripts\plugins\dropzone-master\bower.json" />
+    <Content Include="Scripts\plugins\dropzone-master\component.json" />
+    <Content Include="Scripts\plugins\dropzone-master\composer.json" />
+    <Content Include="Scripts\plugins\dropzone-master\CONTRIBUTING.md" />
+    <Content Include="Scripts\plugins\dropzone-master\dist\readme.md" />
+    <Content Include="Scripts\plugins\dropzone-master\Gruntfile.coffee" />
+    <Content Include="Scripts\plugins\dropzone-master\LICENSE" />
+    <Content Include="Scripts\plugins\dropzone-master\package.json" />
+    <Content Include="Scripts\plugins\dropzone-master\README.md" />
+    <Content Include="Scripts\plugins\dropzone-master\src\basic.scss" />
+    <Content Include="Scripts\plugins\dropzone-master\src\dropzone.coffee" />
+    <Content Include="Scripts\plugins\dropzone-master\src\dropzone.scss" />
+    <Content Include="Scripts\plugins\dropzone-master\test.sh" />
+    <Content Include="Scripts\plugins\dropzone-master\test\test.coffee" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
