@@ -188,6 +188,7 @@
     <Content Include="Scripts\plugins\dropzone-master\src\dropzone.scss" />
     <Content Include="Scripts\plugins\dropzone-master\test.sh" />
     <Content Include="Scripts\plugins\dropzone-master\test\test.coffee" />
+    <Content Include="Views\Admin\Sobre.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -118,7 +118,10 @@ header, main, footer {
 }
 
     .side-nav .collapsible-header + .collapsible-body ul li a {
-        line-height: 40px;
+        line-height: 15px;
+        font-size:13px;
+        margin:0 !important;
+        padding: 10px 10px 10px 30px !important;
     }
 
 .side-nav .nav-opcoes button {
