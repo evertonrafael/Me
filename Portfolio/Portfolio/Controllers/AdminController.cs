@@ -30,5 +30,9 @@ namespace Portfolio.Controllers
         {
             return View();
         }
+        public ActionResult Posts()
+        {
+            return View();
+        }
     }
 }
