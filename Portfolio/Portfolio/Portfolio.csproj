@@ -144,11 +144,54 @@
     <Content Include="Scripts\plugins\dropzone-master\test\test.html" />
     <Content Include="Scripts\plugins\dropzone-master\test\test.js" />
     <Content Include="Scripts\plugins\ie10-viewport-bug-workaround.js" />
+    <Content Include="Scripts\plugins\isotope-master\.gitignore" />
+    <Content Include="Scripts\plugins\isotope-master\dist\isotope.pkgd.js" />
+    <Content Include="Scripts\plugins\isotope-master\dist\isotope.pkgd.min.js" />
+    <Content Include="Scripts\plugins\isotope-master\Gruntfile.js" />
+    <Content Include="Scripts\plugins\isotope-master\js\isotope.js" />
+    <Content Include="Scripts\plugins\isotope-master\js\item.js" />
+    <Content Include="Scripts\plugins\isotope-master\js\layout-mode.js" />
+    <Content Include="Scripts\plugins\isotope-master\js\layout-modes\fit-rows.js" />
+    <Content Include="Scripts\plugins\isotope-master\js\layout-modes\masonry.js" />
+    <Content Include="Scripts\plugins\isotope-master\js\layout-modes\vertical.js" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\basic.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\bottom-up.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\browserify\browserify.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\browserify\jq-main.js" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\browserify\main.js" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\cells-by-row.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\combination-filters-inclusive.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\combination-filters.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\filter-sort.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\fitrows.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\horizontal-layout-modes.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\insert.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\js\require-js.js" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\masonry-horizontal.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\masonry.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\require-js.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\right-to-left.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\sandbox.css" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\sorting.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\stamps.html" />
+    <Content Include="Scripts\plugins\isotope-master\sandbox\transition-bug.html" />
+    <Content Include="Scripts\plugins\isotope-master\test\arrange-complete.js" />
+    <Content Include="Scripts\plugins\isotope-master\test\filtering.js" />
+    <Content Include="Scripts\plugins\isotope-master\test\fit-rows.js" />
+    <Content Include="Scripts\plugins\isotope-master\test\get-segment-size.js" />
+    <Content Include="Scripts\plugins\isotope-master\test\helpers.js" />
+    <Content Include="Scripts\plugins\isotope-master\test\index.html" />
+    <Content Include="Scripts\plugins\isotope-master\test\masonry-measure-columns.js" />
+    <Content Include="Scripts\plugins\isotope-master\test\masonry-stamp.js" />
+    <Content Include="Scripts\plugins\isotope-master\test\sort-data.js" />
+    <Content Include="Scripts\plugins\isotope-master\test\sorting.js" />
+    <Content Include="Scripts\plugins\isotope-master\test\tests.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -190,6 +233,15 @@
     <Content Include="Scripts\plugins\dropzone-master\test\test.coffee" />
     <Content Include="Views\Admin\Sobre.cshtml" />
     <Content Include="Views\Admin\Posts.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_SideBar.cshtml" />
+    <Content Include="Scripts\plugins\isotope-master\.jshintrc" />
+    <Content Include="Scripts\plugins\isotope-master\bower.json" />
+    <Content Include="Scripts\plugins\isotope-master\changelog.md" />
+    <Content Include="Scripts\plugins\isotope-master\CONTRIBUTING.mdown" />
+    <Content Include="Scripts\plugins\isotope-master\package.json" />
+    <Content Include="Scripts\plugins\isotope-master\README.mdown" />
+    <Content Include="Scripts\plugins\isotope-master\test\.jshintrc" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

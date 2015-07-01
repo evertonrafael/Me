@@ -119,8 +119,8 @@ header, main, footer {
 
     .side-nav .collapsible-header + .collapsible-body ul li a {
         line-height: 15px;
-        font-size:13px;
-        margin:0 !important;
+        font-size: 13px;
+        margin: 0 !important;
         padding: 10px 10px 10px 30px !important;
     }
 
@@ -136,3 +136,30 @@ header, main, footer {
     .nav-opcoes:hover {
         background: none !important;
     }
+
+.list-portfolio-home {
+    padding:0 15px;
+}
+
+    .list-portfolio-home li {
+        max-width: 250px;
+        height: auto;
+        margin: 0 2px;
+        width: 30%;
+    }
+
+        .list-portfolio-home li img {
+            width: 100%;
+        }
+
+@media (max-width : 768px) {
+    .list-portfolio-home li {
+        width: 45%;
+    }
+}
+
+@media (max-width : 360px) {
+    .list-portfolio-home li {
+        width: 43%;
+    }
+}

@@ -24,20 +24,30 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="~/Scripts/plugins/ie10-viewport-bug-workaround.js"></script>
 
+    <script src="~/Scripts/plugins/isotope-master/dist/isotope.pkgd.min.js"></script>
+
     <script type="text/javascript">
+        $(document).ready(function () {
 
-        $('.button-collapse').sideNav({
-            menuWidth: 240,
-            edge: 'left',
+            $('.list-portfolio-home').isotope({
+                filter: '*',
+                itemSelector: '.list-portfolio-home li',
+                masonry: {
+                    columnWidth: 4
+                }
+            });
+
+            $('.button-collapse').sideNav({
+                menuWidth: 240,
+                edge: 'left',
+            });
+
+            $('select').material_select();
+
+            $('.datepicker').pickadate({});
+
         });
-
-        $('select').material_select();
-
-        $('.datepicker').pickadate({
-            //selectMonths: true,
-            //selectYears: 15/
-        });
-
     </script>
+
 </body>
 </html>
